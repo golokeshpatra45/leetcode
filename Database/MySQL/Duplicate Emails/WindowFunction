@@ -1,0 +1,14 @@
+-- Link: https://leetcode.com/problemset/database/#:~:text=182.-,Duplicate%20Emails,-66.1%25
+
+/*
+SUBMISSION LOGS - 
+Runtime: 283 ms, faster than 78.58% of MySQL online submissions for Duplicate Emails.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Duplicate Emails.
+*/
+
+-- SUBMISSION:
+
+select distinct a.Email from 
+(select Email,row_number() over (partition by Email) as rn
+from Person) a 
+where a.rn > 1
