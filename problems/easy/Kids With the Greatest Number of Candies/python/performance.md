@@ -1,4 +1,6 @@
-## Brute Force Approach 
+## Optimum Approach
+
+https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/submissions/1573687698
 
 Accepted
 103 / 103 testcases passed
